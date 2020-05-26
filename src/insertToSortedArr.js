@@ -1,9 +1,9 @@
 const insertToSortedArr = (arr, l, r, val) => {
   if (r <= l) {
-    if (arr[r] <= val) {
-      arr.splice(r + 1, 0, val);
+    if (arr[l] <= val) {
+      arr.splice(l + 1, 0, val);
     } else {
-      arr.splice(r, 0, val);
+      arr.splice(l, 0, val);
     }
     return arr;
   }

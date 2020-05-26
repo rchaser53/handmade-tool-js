@@ -32,7 +32,6 @@ describe('insertToSortedArr', () => {
     expect(insertToSortedArr([2, 4, 6, 8, 10, 12], 0, 5, 6)).toEqual(
       [2, 4, 6, 6, 8, 10, 12]
     );
-
   });
 
   test('no value inside', async () => {
@@ -41,6 +40,12 @@ describe('insertToSortedArr', () => {
     );
     expect(insertToSortedArr([2, 4, 6, 8, 10, 12], 0, 5, 5)).toEqual(
       [2, 4, 5, 6, 8, 10, 12]
+    );
+  });
+
+  test('length zero', async () => {
+    expect(insertToSortedArr([], 0, 0, 1)).toEqual(
+      [1]
     );
   });
 });
