@@ -1,0 +1,25 @@
+{
+  "name": "handmade-tool-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "format": "prettier --write src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchaser53/handmade-tool-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rchaser53/handmade-tool-js/issues"
+  },
+  "homepage": "https://github.com/rchaser53/handmade-tool-js#readme",
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5"
+  }
+}
