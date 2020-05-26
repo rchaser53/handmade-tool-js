@@ -1,6 +1,6 @@
 const binarySearch = (arr, l, r, val) => {
   if (r <= l) {
-    return r;
+    return arr[r] === val ? r : -1;
   }
 
   const middle = Math.floor((l + r) / 2);

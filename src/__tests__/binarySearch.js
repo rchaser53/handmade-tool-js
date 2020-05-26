@@ -9,4 +9,9 @@ describe('binarySearch', () => {
     expect(binarySearch([1, 2, 3, 4, 5, 6], 0, 5, 5)).toBe(4);
     expect(binarySearch([1, 2, 3, 4, 5, 6], 0, 5, 6)).toBe(5);
   });
+
+  test('not found', async () => {
+    expect(binarySearch([1, 2, 3, 4, 5, 6], 0, 5, 10)).toBe(-1);
+    expect(binarySearch([1, 2, 3, 4, 5, 6], 0, 5, 0)).toBe(-1);
+  });
 });
