@@ -22,3 +22,20 @@ const buildMaxHeap = (arr) => {
     maxHeapify(arr, i);
   }
 };
+
+const increaseKey = (arr, i, key) => {
+  if (key < arr[i]) return;
+  A[i] = key;
+  while (1 < i && arr[Math.floor(i/2)] < arr[i]) {
+    const hi = Math.floor(i/2);
+    const temp = arr[hi]
+    arr[hi] = arr[i];
+    arr[i] = temp;
+    i = hi;
+  }
+}
+
+const insert = (arr, key) => {
+  arr.push(Number.MIN_VALUE);
+  increaseKey(arr, arr.length-1, key);
+}
