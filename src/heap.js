@@ -1,6 +1,6 @@
 const maxHeapify = (arr, i) => {
-  const l = 2 * i;
-  const r = l + 1;
+  const l = 2 * (i + 1);
+  const r = l - 1;
 
   let largest = l < arr.length && arr[l] > arr[i] ? l : i;
 
