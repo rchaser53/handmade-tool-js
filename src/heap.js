@@ -39,3 +39,16 @@ const insert = (arr, key) => {
   arr.push(Number.MIN_VALUE);
   increaseKey(arr, arr.length-1, key);
 }
+
+const heapExtractMax = (arr) => {
+  const max = arr[0];
+  arr[0] = arr.pop();
+  buildMaxHeap(arr);
+  return max
+}
+
+module.exports = {
+  buildMaxHeap,
+  insert,
+  heapExtractMax,
+}
